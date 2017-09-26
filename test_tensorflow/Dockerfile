@@ -43,4 +43,4 @@ WORKDIR "/home/workplace"
 
 COPY test.py /home/workplace/test_tensor/
 COPY input_data.py /home/workplace/test_tensor/
-CMD /bin/bash
+CMD python3 test_tensor/test.py
