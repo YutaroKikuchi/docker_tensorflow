@@ -37,6 +37,8 @@ skip_learning = False
 # Configuration file path
 config_file_path = "./config/simpler_basic.cfg"
 
+visible = False
+
 
 # config_file_path = "../../scenarios/rocket_basic.cfg"
 # config_file_path = "../../scenarios/basic.cfg"
@@ -270,7 +272,7 @@ if __name__ == '__main__':
     print("Training finished. It's time to watch!")
 
     # Reinitialize the game with window visible
-    game.set_window_visible(True)
+    game.set_window_visible(visible)
     game.set_mode(Mode.ASYNC_PLAYER)
     game.init()
 
